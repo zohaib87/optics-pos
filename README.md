@@ -1,5 +1,5 @@
 
-# About Optics POS
+## About Optics POS
 
 [![Issues](https://img.shields.io/github/issues/zohaib87/optics-pos)](https://github.com/zohaib87/optics-pos/issues)
 [![Release Latest](https://img.shields.io/github/v/release/zohaib87/optics-pos?color=yellowgreen)](https://github.com/zohaib87/optics-pos/releases/latest)
