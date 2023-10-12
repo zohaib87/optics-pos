@@ -1,0 +1,731 @@
+/*--------------------------------------------------------------
+# Admin Styles
+--------------------------------------------------------------*/
+.opos-field:not(:last-of-type) {
+  margin: 0 0 12px;
+}
+.opos-label,
+.opos-input {
+	display: inline-block;
+}
+.opos-label {
+  width: 25%;
+  margin-bottom: 5px;
+}
+.opos-label label {
+	font-weight: 400;
+}
+.opos-label ~ .xe-input {
+  width: 75%;
+}
+.opos-label, .xe-input {
+  vertical-align: top;
+  float: left;
+  box-sizing: border-box;
+}
+.opos-field:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.del {
+	cursor: pointer;
+}
+.opos-field-sm {
+	width: 65px;
+}
+.opos-field-md {
+	width: 120px;
+}
+.opos-field #customer ~ .select2-container {
+	margin-bottom: 7px;
+	min-width: 169px;
+}
+.opos-field .select2-container--default .select2-selection--single,
+.opos-field input[type=color],
+.opos-field input[type=date],
+.opos-field input[type=datetime-local],
+.opos-field input[type=datetime],
+.opos-field input[type=email],
+.opos-field input[type=month],
+.opos-field input[type=number],
+.opos-field input[type=password],
+.opos-field input[type=search],
+.opos-field input[type=tel],
+.opos-field input[type=text],
+.opos-field input[type=time],
+.opos-field input[type=url],
+.opos-field input[type=week],
+.wp-core-ui .opos-field select,
+.opos-field textarea {
+	border-radius: 0px;
+  border: 1px solid #cccccc;
+}
+.opos-field .select2-container--default .select2-selection--single,
+.wp-core-ui .opos-field select {
+	min-height: 30px;
+}
+.opos-hide-pw .dashicons {
+	line-height: 28px;
+}
+.opos-sr {
+  display: flex;
+  padding-top: 5px;
+}
+.opos-sc {
+  flex: 1;
+}
+.opos-print-only {
+  display: none;
+}
+.loader {
+  display: inline-block;
+  border: 3px solid #d5d5d5;
+  border-top: 3px solid #555;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loading-txt {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+@media screen and (max-width: 782px) {
+	.opos-field .select2-container--default .select2-selection--single, .wp-core-ui .opos-field select {
+    min-height: 40px;
+	}
+	.opos-field #customer ~ .select2-container {
+	  min-width: 189px;
+	}
+	.opos-field .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-top: 4px;
+  }
+  .opos-field .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 38px;
+	}
+}
+@media screen and (max-width: 1180px) {
+  .opos-sr {
+    display: block;
+  }
+  .opos-sc {
+    flex: none;
+  }
+}
+/*--------------------------------------------------------------
+# Notification
+--------------------------------------------------------------*/
+.opos-useralert,
+.opos-alertarea {
+	position: fixed;
+  top: 42px;
+  right: 10px;
+  min-width: 320px;
+  z-index: 105;
+}
+@media screen and (max-width: 782px) {
+	.opos-useralert,
+	.opos-alertarea {
+	  top: 60px;
+	}
+}
+.opos-alert {
+  text-align: left;
+  font-size: 14px;
+  padding: 17px 21px 18px;
+  margin-bottom: 5px;
+  border-left: 5px solid;
+}
+.opos-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+.opos-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.opos-warning {
+	color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.opos-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.opos-alert span.dismiss {
+  padding: 0 2px;
+  cursor: pointer;
+  float: right;
+  margin-left: 11px;
+}
+.opos-alert a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*--------------------------------------------------------------
+# Helpers
+--------------------------------------------------------------*/
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.float-right {
+	float: right;
+	clear: both;
+}
+/*--------------------------------------------------------------
+# User Data
+--------------------------------------------------------------*/
+.customer-detail {
+	padding: 10px 15px;
+}
+.wp-core-ui .button.print-user-detail {
+	margin-top: 7px;
+	margin-left: -1.5px;
+}
+/*--------------------------------------------------------------
+# Add User
+--------------------------------------------------------------*/
+.add-user {
+	padding: 10px 15px;
+}
+.wp-core-ui .button.add-user {
+	margin-top: 7px;
+	margin-left: -1.5px;
+}
+.add-customer .error {
+	display: block;
+	color: red;
+  margin: 10px 0 5px;
+}
+/*--------------------------------------------------------------
+# Product Search
+--------------------------------------------------------------*/
+.ui-autocomplete li {
+  padding: 0;
+}
+.ui-menu-item .ui-menu-item-wrapper {
+	padding: 4px 10px;
+}
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active,
+.ui-menu .ui-menu-item:hover {
+	color: #fff;
+	background-color: #3875d7;
+}
+.opos-add-product {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 9px;
+  margin-top: 11px;
+}
+.opos-add-product .opos-barcode {
+	float: left;
+	padding: 0px 5px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	line-height: 0;
+}
+@media screen and (max-width: 782px) {
+	.opos-add-product .opos-barcode {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+}
+.opos-barcode img {
+	max-width: 32px;
+}
+input.opos-search-product {
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  min-height: 34px;
+  margin: 0 0 0 3px;
+}
+input.opos-search-product::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+input.opos-search-product {
+  width: -webkit-calc(100% - 47px);
+  width: -moz-calc(100% - 47px);
+  width: calc(100% - 47px);
+}
+/*--------------------------------------------------------------
+# Product List
+--------------------------------------------------------------*/
+.post-type-opos-sales #product_list_meta_box {
+	overflow-x: auto;
+}
+.opos-list-products {
+  min-width: 820px;
+}
+.opos-list-products .sr-no {
+  cursor: all-scroll;
+}
+.table th {
+	padding: 10px;
+}
+.table td {
+	padding: 5px 10px;
+}
+.table > thead:first-child > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td,
+.table-striped thead tr.primary:nth-child(odd) th {
+  background-color: #428BCA;
+  color: white;
+  border-color: #357EBD;
+  border-top: 1px solid #357EBD;
+  text-align: center;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #D9EDF7;
+  border-color: #AFD9EE;
+}
+.opos-list-products thead th:nth-child(1) {
+	width: 5%;
+}
+.opos-list-products thead th:nth-child(2) {
+	width: auto;
+}
+.opos-list-products thead th:nth-child(3),
+.opos-list-products thead th:nth-child(4),
+.opos-list-products thead th:nth-child(5),
+.opos-list-products thead th:nth-child(7) {
+	width: 11%;
+}
+.opos-list-products thead th:nth-child(6) {
+	width: 17%;
+}
+.opos-list-products thead th:nth-child(8) {
+	width: 5%;
+}
+.opos-list-products .opos-select2 ~ .select2-container {
+	margin-bottom: 3px;
+}
+/*--------------------------------------------------------------
+# Admin Columns
+--------------------------------------------------------------*/
+.fixed .column-salesman {
+  width: 14%;
+}
+.fixed .column-order_no,
+.fixed .column-contact_no {
+	width: 9%;
+}
+.fixed .column-sales_status {
+	width: 8%;
+}
+.fixed .column-sales_status span {
+  color: white;
+  padding: 2px 5px 5px;
+  border-radius: 5px;
+}
+.fixed .column-sales_status span.pending {
+	background: orange;
+}
+.fixed .column-sales_status span.completed {
+	background: green;
+}
+/* Frames */
+.fixed .column-featured_img {
+	width: 8%;
+}
+.fixed .column-featured_img img {
+  border: 1px solid #ececec;
+}
+.fixed .column-barcode {
+	width: 9%;
+}
+.fixed .column-price,
+.fixed .column-cost,
+.fixed .column-stock {
+	width: 6%;
+}
+/* Glasses */
+.fixed .column-taxonomy-opos-glasses-cat {
+	width: 12%;
+}
+/* Expense */
+.fixed .column-expense {
+  width: 12%;
+}
+/*--------------------------------------------------------------
+# Sale Receipt
+--------------------------------------------------------------*/
+.opos-invoice {
+  background: #fff;
+}
+.opos-invoice-mid {
+	padding: 7px 0;
+}
+.opos-invoice-mid td {
+	width: 50%;
+	vertical-align: baseline;
+}
+#poststuff .opos-invoice-mid h2 {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.opos-invoice h3 {
+  font-weight: 300;
+  line-height: 2em;
+}
+.opos-invoice .opos-invoice-top,
+.opos-invoice .opos-invoice-bot {
+  border-bottom: 1px solid #ddd;
+}
+.opos-invoice .opos-invoice-top {
+	text-align: center;
+  padding: 15px 0 21px;
+}
+.opos-invoice .opos-invoice-mid .title {
+	font-weight: 500;
+}
+.opos-invoice .opos-invoice-bot {
+	min-height: 50px;
+}
+.opos-invoice .info {
+  display: block;
+  margin-left: 0;
+}
+.opos-invoice table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.opos-invoice .tabletitle {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+}
+.opos-invoice #legalcopy {
+  margin-top: 5mm;
+}
+.opos-invoice-bot .item {
+	width: 60%;
+}
+.opos-invoice-bot .qty {
+	width: 15%;
+}
+.opos-invoice-bot .totl {
+	width: 25%;
+}
+.opos-invoice-bot p {
+  color: #666;
+  line-height: 1.2em;
+}
+.opos-invoice-bot .service p {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.opos-invoice-bot .service:first-child p {
+	margin-top: 6px;
+}
+.opos-invoice-bot .service:last-child p {
+	margin-bottom: 7px;
+}
+/*--------------------------------------------------------------
+# Sale Receipt (Style 2)
+--------------------------------------------------------------*/
+.opos-invoice.style-2 {
+  color: #000;
+}
+.opos-invoice.style-2 .fresc,
+.opos-invoice.style-2 .fable {
+  display: flex;
+  flex-wrap: wrap;
+}
+.opos-invoice.style-2 .fable > *,
+.opos-invoice.style-2 .fresc > * {
+  padding: 5px 0;
+}
+.opos-invoice.style-2 .fable > * {
+  width: 25%;
+}
+.opos-invoice.style-2 .fresc > div:first-child {
+  flex: 1;
+}
+.opos-invoice.style-2 .fresc > div:nth-child(2) {
+  width: calc(100% - 100px);
+}
+.opos-invoice.style-2 .opos-invoice-title {
+  text-align: center;
+}
+.opos-invoice.style-2 h1 {
+  padding: 5px 0 10px 0;
+}
+.opos-invoice.style-2 .opos-invoice-top {
+  padding: 72px 0;
+  border-bottom: none;
+}
+.opos-invoice.style-2 .opos-invoice-mid {
+  padding: 0;
+}
+.opos-invoice.style-2 .opos-invoice-mid td {
+	width: auto;
+}
+.opos-invoice.style-2 .opos-invoice-mid td {
+  min-width: 90px;
+}
+.opos-invoice.style-2 .opos-invoice-bot p {
+  color: #000;
+}
+.opos-invoice.style-2 .disblo tr {
+  display: inline-block;
+}
+.opos-invoice.style-2 .disblo td {
+  padding: 5px;
+}
+.opos-invoice.style-2 .presc {
+  border-bottom: 1px solid #000;
+}
+.opos-invoice.style-2 hr.cut {
+  margin-top: 19px;
+  border-top: 2px dashed #000;
+}
+@media screen and (max-width: 1200px) {
+  .opos-invoice.style-2 .fable > * {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .opos-invoice.style-2 .fable > * {
+    display: flex;
+    width: 100%;
+  }
+  .opos-invoice.style-2 .fable > * > .title {
+    flex: 1;
+  }
+  .opos-invoice.style-2 .fable > * > .value {
+    width: calc(100% - 100px);
+  }
+}
+/*--------------------------------------------------------------
+# Labs & Reports
+--------------------------------------------------------------*/
+.opos-reports-table .print-reports,
+.opos-labs-table .print-labs {
+	float: right;
+	clear: both;
+}
+/*--------------------------------------------------------------
+# Labs & Reports Table
+--------------------------------------------------------------*/
+.opos-stats-table,
+.opos-reports-table,
+.opos-labs-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+.opos-stats-table caption,
+.opos-reports-table caption,
+.opos-labs-table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+.opos-stats-table tr,
+.opos-reports-table tr,
+.opos-labs-table tr {
+  background-color: #f8f8f8;
+  padding: .35em;
+}
+.opos-stats-table th,
+.opos-stats-table td,
+.opos-reports-table th,
+.opos-reports-table td,
+.opos-labs-table th,
+.opos-labs-table td {
+  padding: .625em;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.opos-stats-table th,
+.opos-reports-table th,
+.opos-labs-table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.opos-labs-table th:first-child {
+	width: 20%;
+}
+.opos-labs-table th:nth-child(2) {
+	width: 20%;
+}
+.opos-reports-table .sale-status {
+	color: white;
+	padding: 2px 5px 5px;
+	border-radius: 5px;
+}
+.opos-reports-table .sale-status.completed {
+	background: green;
+}
+.opos-reports-table .sale-status.pending {
+	background: orange;
+}
+@media screen and (max-width: 600px) {
+  .opos-stats-table,
+  .opos-reports-table,
+  .opos-labs-table {
+    border: 0;
+  }
+  .opos-stats-table caption,
+  .opos-reports-table caption,
+  .opos-labs-table caption {
+    font-size: 1.3em;
+  }
+  .opos-stats-table thead,
+  .opos-reports-table thead,
+  .opos-labs-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .opos-stats-table tr,
+  .opos-reports-table tr,
+  .opos-labs-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  .opos-stats-table td,
+  .opos-reports-table td,
+  .opos-labs-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  .opos-stats-table td::before,
+  .opos-reports-table td::before,
+  .opos-labs-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .opos-stats-table td:last-child,
+  .opos-reports-table td:last-child,
+  .opos-labs-table td:last-child {
+    border-bottom: 0;
+  }
+  .opos-reports-table label,
+  .opos-labs-table label {
+  	display: block;
+		margin-bottom: 8px;
+  }
+  .opos-reports-table .print-reports,
+  .opos-labs-table .print-labs {
+  	float: none;
+  }
+}
+/*--------------------------------------------------------------
+# Labs, Expense & Sales Reports Navigation
+--------------------------------------------------------------*/
+.opos-labs-nav,
+.opos-ereports-nav,
+.opos-reports-nav {
+	text-align: center;
+  margin-top: 15px;
+}
+.opos-labs-nav :is(a, span),
+.opos-ereports-nav :is(a, span),
+.opos-reports-nav :is(a, span) {
+	margin-left: 1px;
+	margin-right: 1px;
+	padding: 5px 9px 8px;
+	border: 1px solid #ccc;
+	background: #F8F8F8;
+}
+/*--------------------------------------------------------------
+# Barcoe Generator
+--------------------------------------------------------------*/
+.opos-barcodes .barcode {
+  margin: 5px;
+}
+.opos-barcodes {
+  display: none;
+}
+/*--------------------------------------------------------------
+# Expenses
+--------------------------------------------------------------*/
+.exp-cf {
+  margin-bottom: 5px;
+}
+/*--------------------------------------------------------------
+# Print Styles
+--------------------------------------------------------------*/
+@media print {
+  @page {
+    size: auto;
+    margin: 0; /* this affects the margin in the printer settings */
+  }
+  html {
+    background-color: #FFFFFF;
+    margin: 0; /* this affects the margin on the html before sending to printer */
+  }
+  body {
+    height: auto;
+    margin: 30px; /* margin for the content */
+  }
+	button {
+		display: none;
+	}
+  .opos-barcodes {
+    display: block;
+  }
+  .opos-stats-table {
+    margin-bottom: 10px;
+  }
+  .fixed .column-cost {
+    width: 50px;
+  }
+  .opos-print-only {
+    display: block;
+  }
+}
+/*--------------------------------------------------------------
+# Freemius
+--------------------------------------------------------------*/
+#fs_connect {
+  width: auto !important;
+  text-align: center !important;
+  margin: 20px 20px 0 2px !important;
+}
+#fs_account .postbox {
+  max-width: 100%;
+}
