@@ -20,7 +20,7 @@ Your [pull requests](https://github.com/zohaib87/optics-pos/pulls) will be highl
 1. You must have latest version of [WordPress](https://wordpress.org/) and [Nodejs](https://nodejs.org/en/).
 2. Create a fork of this repository.
 3. Clone the fork on your local machine. Your remote repo on Github is called `origin`.
-4. Add the original repository as a remote called `upstream`.
+4. Add this repository as a remote called `upstream`.
 5. If you created your fork a while ago be sure to pull upstream changes into your local repository.
 6. Open command line, navigate to the local repository and run `npm install` to install dependencies.
 7. Create a new branch to work on. Keep in mind that code should meet the [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/).
